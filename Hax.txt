@@ -1,0 +1,33 @@
+
+INSTRUCTIONS
+
+To Add File:
+
+git add <Filename>
+
+
+Commit File (Change Locally):
+
+
+git commit
+
+
+Save The Changes To The Server:
+
+git push
+
+Remove File:
+
+git rm <Filename>
+
+
+To Add Repo To Computer:
+
+git clone <Git URL>
+
+
+To Add Proxy:
+
+git config --global http.proxy "<username>:<password>@proxy.dovergramboys.kent.sch.uk:3128
+
+git config --global https.proxy "<username>:<password>@proxy.dovergramboys.kent.sch.uk:3128
