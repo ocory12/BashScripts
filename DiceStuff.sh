@@ -20,36 +20,36 @@ while [ $UserGuess -ne $DiceTotal -a $tries -lt 10 ]
 do
 
 
-			echo "What Is Your Guess?"
-			read UserGuess
+	echo "What Is Your Guess?"
+	read UserGuess
 
 
 
-			if [ $UserGuess == $DiceTotal ]
-				then
-					echo "You Guest Right"
+	if [ $UserGuess == $DiceTotal ]
+		then
+			echo "You Guest Right"
 
-			elif [ $UserGuess -gt $DiceTotal ]
-				then
-					echo "To High"
-					if [ $tries -lt 3 ]
-						then
-							let Score=$Score-2
-						else
-							let Score=$Score-1
-					fi
+		elif [ $UserGuess -gt $DiceTotal ]
+			then
+				echo "To High"
+				if [ $tries -lt 3 ]
+					then
+						let Score=$Score-2
+					else
+						let Score=$Score-1
+				fi
 			else
-					echo "To Low"
-					if [ $tries -lt 3 ]
-						then
-							let Score=$Score-2
-						else
-							let Score=$Score-1
-					fi
+				echo "To Low"
+				if [ $tries -lt 3 ]
+					then
+						let Score=$Score-2
+					else
+						let Score=$Score-1
+				fi
 
 			fi
 
-			let tries=$tries+1
+		let tries=$tries+1
 done
 
 if [ $UserGuess == $DiceTotal ]
